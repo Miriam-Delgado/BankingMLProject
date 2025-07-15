@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Investment_Type_Fixed Deposit &le; 0.5<br/>gini = 0.356<br/>samples = 10035<br/>value = [7712, 2323]<br/>class = No>, fillcolor="#eda775"] ;
+1 [label=<gini = 0.0<br/>samples = 7712<br/>value = [7712, 0]<br/>class = No>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.0<br/>samples = 2323<br/>value = [0, 2323]<br/>class = Yes>, fillcolor="#399de5"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
